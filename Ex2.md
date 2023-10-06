@@ -120,7 +120,8 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 ![image](https://github.com/SanjithaBolisetti/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119393633/d29d1ad5-a7a6-4ac7-9e9b-69ae3f08db3e)
 
 ### OUTPUT:
-![image](https://github.com/SanjithaBolisetti/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119393633/117f6be8-b14f-48f0-99e2-1fb6df168c60)
+![image](https://github.com/SanjithaBolisetti/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119393633/77a50f94-0847-4fff-8f66-7fcc3332291d)
+
 
 
 
