@@ -110,7 +110,8 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 
 
 ### OUTPUT:
-![image](https://github.com/SanjithaBolisetti/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119393633/2355404d-28b8-4092-84bf-b5c4799fcf86)
+![image](https://github.com/SanjithaBolisetti/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119393633/9c3b2475-5d3f-4be7-8baf-2258af5f5cc2)
+
 
 
 ### Q10) List the Details of Employees who have joined before 30 Sept 81.
