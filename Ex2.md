@@ -30,8 +30,9 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 ### Q1) Update all the records of manager table by increasing 10% of their salary as bonus.
 
 ### QUERY:
-![image](https://github.com/SanjithaBolisetti/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119393633/a53c8bb9-bda1-494a-9d0d-659b3795e0d8)
-
+```
+UPDATE MANAGER SET SALARY=(SALARY*0.10)+SALARY;
+```
 ### OUTPUT:
 ![image](https://github.com/SanjithaBolisetti/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119393633/a8843b5a-2219-4c38-8c4a-92fbd4e9322b)
 
@@ -41,7 +42,9 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 
 
 ### QUERY:
-![image](https://github.com/SanjithaBolisetti/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119393633/988deeb0-eec4-4ead-b3fd-98f583f95772)
+```
+DELETE WORKER WHERE SALARY<2750;
+```
 
 ### OUTPUT:
 ![image](https://github.com/SanjithaBolisetti/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119393633/4fffac4e-230a-4c25-9ac4-681124979455)
@@ -52,8 +55,9 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 
 
 ### QUERY:
-![image](https://github.com/SanjithaBolisetti/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119393633/66bde32c-8a97-460b-96d4-a3652b216a8c)
-
+```
+SELECT ENAME AS 'NAME' ,SALARY * 12 AS 'ANNUAL SALARY' FROM MANAGER;
+```
 
 ### OUTPUT:
 ![image](https://github.com/SanjithaBolisetti/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119393633/c8eeceff-7e20-4288-8fa9-9c6c11301881)
@@ -64,7 +68,9 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 
 
 ### QUERY:
-![image](https://github.com/SanjithaBolisetti/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119393633/d56a63e2-bce8-43fd-a4ad-a02a83f5a995)
+```
+SELECT ENAME FROM MANAGER WHERE DESIGNATION='CLERK';
+```
 
 ### OUTPUT:
 ![image](https://github.com/SanjithaBolisetti/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119393633/10088bd7-599e-4f36-a6a2-1ae5a8080a22)
@@ -73,8 +79,9 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 
 
 ### QUERY:
-
-![image](https://github.com/SanjithaBolisetti/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119393633/23b5aad3-7f10-4692-b425-c9690e4620b3)
+```
+SELECT ENAME FROM MANAGER WHERE DESIGNATION != 'MANAGERS';
+```
 
 
 ### OUTPUT:
@@ -86,7 +93,9 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 
 
 ### QUERY:
-![image](https://github.com/SanjithaBolisetti/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119393633/27d7a1ed-6db7-48f8-81d4-4c75355666cd)
+```
+SELECT ENAME FROM MANAGER WHERE COMMISSION=0;
+```
 
 ### OUTPUT:
 ![image](https://github.com/SanjithaBolisetti/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119393633/88ad2b4d-7bb5-4158-9d70-ec77d2aae863)
@@ -96,7 +105,9 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 
 
 ### QUERY:
-![image](https://github.com/SanjithaBolisetti/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119393633/ac3bf366-db58-4435-9524-8b4c7a8f07c0)
+```
+SELECT ENAME FROM MANAGER WHERE ENAME LIKE 'S%' OR ENAME LIKE '%S';
+```
 
 ### OUTPUT:
 ![image](https://github.com/SanjithaBolisetti/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119393633/c6731be9-ac28-4e58-b9d2-f01d7a500b4a)
@@ -106,8 +117,9 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 
 
 ### QUERY:
-![image](https://github.com/SanjithaBolisetti/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119393633/e8a641f0-ea17-4e94-b3d9-ff970a6a57f5)
-
+```
+SELECT ENAME,DESIGNATION,DEPTNO,HIREDATE FROM MANAGER ORDER BY HIREDATE ASC;
+```
 
 ### OUTPUT:
 ![image](https://github.com/SanjithaBolisetti/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119393633/9c3b2475-5d3f-4be7-8baf-2258af5f5cc2)
@@ -118,7 +130,9 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 
 
 ### QUERY:
-![image](https://github.com/SanjithaBolisetti/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119393633/d29d1ad5-a7a6-4ac7-9e9b-69ae3f08db3e)
+```
+SELECT * FROM MANAGER WHERE HIREDATE < '30 SEP 81';
+```
 
 ### OUTPUT:
 ![image](https://github.com/SanjithaBolisetti/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119393633/77a50f94-0847-4fff-8f66-7fcc3332291d)
@@ -130,7 +144,9 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 
 
 ### QUERY:
-![image](https://github.com/SanjithaBolisetti/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119393633/758184b7-5f7f-4082-8b48-d79d01e0e4db)
+```
+SELECT ENAME,DEPTNO,SALARY FROM MANAGER ORDER BY DEPTNO ASC,SALARY DESC;
+```
 
 ### OUTPUT:
 ![image](https://github.com/SanjithaBolisetti/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119393633/d97b720f-6e6b-4065-92fd-ef8336e7c8be)
@@ -139,7 +155,9 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 ### Q12) List the names of employees not belonging to dept no 30,40 & 10
 
 ### QUERY:
-![image](https://github.com/SanjithaBolisetti/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119393633/83f9b3f3-e0e0-4852-9568-220c847edf4d)
+```
+SELECT ENAME FROM MANAGER WHERE DEPTNO NOT IN(30,40,10);
+```
 
 ### OUTPUT:
 ![image](https://github.com/SanjithaBolisetti/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119393633/c5bd1deb-95c3-4651-bf3a-da21124670fc)
@@ -149,8 +167,9 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 ### Q13) Find number of rows in the table EMP
 
 ### QUERY:
-![image](https://github.com/SanjithaBolisetti/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119393633/60460d09-162e-4787-9428-dbcf0fe0aa81)
-
+```
+SELECT COUNT(*) AS NUM_ROWS FROM MANAGER;
+```
 
 
 ### OUTPUT:
@@ -161,7 +180,9 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 ### Q14) Find maximum, minimum and average salary in EMP table.
 
 ### QUERY:
-![image](https://github.com/SanjithaBolisetti/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119393633/1f69b69b-47a6-4686-b9c8-d7ae88385d0e)
+```
+SELECT MAX(SALARY) AS MAX_SALARY,MIN(SALARY) AS MIN_SALARY,AVG(SALRY) AS AVG_SALARY FROM MANAGER;
+```
 
 
 ### OUTPUT:
@@ -171,7 +192,9 @@ insert into manager values(7788,'Vikash',4000,0,48000,'12-Aug-82','clerk',50,'Bo
 ### Q15) List the jobs and number of employees in each job. The result should be in the descending order of the number of employees.
 
 ### QUERY:
-![image](https://github.com/SanjithaBolisetti/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119393633/7e10c6e4-6646-41cf-8e98-4ac24cee1487)
+```
+SELECT DESIGNATION,COUNT(*) AS NUM_EMPLOYEES FROM MANAGER GROUP BY DESIGNATION ORDER BY NUM_EMPLOYEES DESC;
+```
 
 ### OUTPUT:
 ![image](https://github.com/SanjithaBolisetti/EX-2-Data-Manipulation-Language-DML-and-Data-Control-Language-DCL-Commands/assets/119393633/3a3e76d4-42af-4033-98c7-6e04c2a3f965)
