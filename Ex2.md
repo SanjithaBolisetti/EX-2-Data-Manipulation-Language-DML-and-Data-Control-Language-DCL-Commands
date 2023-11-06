@@ -1,4 +1,6 @@
 # EX 2 Data Manipulation Language (DML) Commands and built in functions in SQL
+Date:
+
 ## AIM:
 To create a manager database and execute DML queries using SQL.
 
@@ -43,7 +45,7 @@ UPDATE MANAGER SET SALARY=(SALARY*0.10)+SALARY;
 
 ### QUERY:
 ```
-DELETE WORKER WHERE SALARY<2750;
+DELETE WORKER FRPM MANAGER WHERE SALARY<2750;
 ```
 
 ### OUTPUT:
